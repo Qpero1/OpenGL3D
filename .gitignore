@@ -361,3 +361,62 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+
+# ========== CMake ==========
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+build/
+out/
+install/
+
+# ========== OpenGL Project Specific ==========
+# Ignore compiled shader binaries or caches
+*.spv
+*.shaderc
+
+# Ignore temporary asset/model build folders
+Assets/Temp/
+Assets/Build/
+Assets/Cache/
+
+# Ignore Blender autosaves / model backups
+*.blend1
+*.blend2
+*.fbx~
+*.obj~
+
+# ========== Keep important resources ==========
+!*.glsl
+!*.frag
+!*.vert
+!*.geom
+!*.comp
+!*.png
+!*.jpg
+!*.jpeg
+!*.bmp
+!*.tga
+!*.mtl
+!*.obj
+
+# ========== Libraries (GLFW / GLAD precompiled) ==========
+Libraries/lib/*.lib
+Libraries/lib/*.exp
+Libraries/lib/*.pdb
+Libraries/lib/*.dll
+Libraries/lib/*.so
+Libraries/lib/*.dylib
+Libraries/lib/*.a
+Libraries/lib/*.obj
+
+# If you ever build anything in Libraries/
+Libraries/**/CMakeFiles/
+Libraries/**/CMakeCache.txt
+Libraries/**/Makefile
+Libraries/**/cmake_install.cmake
+Libraries/**/build/
+Libraries/**/out/
+
